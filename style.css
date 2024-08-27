@@ -1,0 +1,149 @@
+:root {
+    --colorPrimario: #F0F4EF;
+}
+* {
+    padding: 0;
+    margin:0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--colorPrimario);
+}
+.areaTexto {
+    resize: none;
+    font-family: "Hero", serif;
+    text-align: left;
+    outline: none; 
+    border: none;
+    border-radius: 10px;
+
+    height: 300px;
+    width: 300px;
+    line-height: 300px;
+    padding: 10px;
+  
+    width: 25%; 
+    margin: auto; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-155%, -50%);
+
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+
+  .resultado{
+    font-family: "Hero", serif;
+    height: 300px; 
+    width: 300px; 
+    line-height: 300px;
+    padding: 10px;
+  
+    width: 25%; 
+    margin: auto; 
+    position: absolute; 
+    top: 50%; 
+    left: 85%; 
+    transform: translate(-155%, -50%); 
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  .encriptador{
+    position: absolute;
+    bottom: 100px;
+    left: 125px;
+    background-color: #1E1E24;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .desencriptador{
+    position: absolute;
+    bottom: 100px;
+    left: 365px;
+    background-color: #1E1E24;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+.advertencia{
+    font-family: "Hero", serif;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #F6AE2D;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+}
+.copiar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    width: 25%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translate(-155%, -50%);
+}
+.mensaje{
+    font-size: 18pt;
+    font-family: "Hero", serif;
+    text-align: center;
+    position: sticky;
+    top: 0%; 
+    color: #72B01D;
+    padding: 10px;
+    z-index: 1;
+}
+.x{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    bottom: 125px;
+    right: 20px;
+}
+.whatsapp{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    bottom: 50px;
+    right: 20px;
+}
+.h1{
+    font-family: "Hero", serif;
+    font-size: 12pt;
+    flex: 1 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 40px;
+}

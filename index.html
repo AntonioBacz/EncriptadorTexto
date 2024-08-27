@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Encriptador de texto | Antonio Bacilio</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="assets/candado.png" type="image/x-icon">
+    </head>
+    <h1>
+        <p class="h1">Desarrollado por Antonio Bacilio | 2024</p>
+    </h1>
+    <body>
+        <div class="container">
+        <div class ="advertencia" id="advertencia" style="display: none;">¡ADVERTENCIA! No se permite acentos, ni caracteres especiales.</div>
+        <div class="resultado" id="traduccion"></div>
+        <textarea class="areaTexto" id="textoUsuario" placeholder="Escribe..." oninput="eliminarCaracteresEspeciales(event)"></textarea>
+        <button class = "encriptador" onclick="encriptador()">Encriptar</button>
+        <button class = "desencriptador" onclick="desencriptarInformacion()">Desencriptar</button>
+        <button class="copiar" id="botonCopiar">
+            <img src="assets/copiar.png" alt="boton copiar">
+        </button>
+        <p class="mensaje" id="mensajeCopiado"></p>
+        <button class="x" onclick="compartirX()">
+            <img src="assets/x.png" alt="Compartir en X">
+        </button>
+        <button class="whatsapp" onclick="compartirWhatsapp()">
+            <img src="assets/whatsapp.png" alt="Compartir en WhatsApp">    
+        </button>
+    </body>
+
+    <script src="app.js"></script>
+
+</html>
